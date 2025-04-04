@@ -1,0 +1,11 @@
+5 5
+A
+B
+C
+D
+E
+AB 10
+CD 5
+EA 9
+AC 8
+DE 2
