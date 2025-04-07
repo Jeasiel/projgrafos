@@ -25,20 +25,20 @@ public class Leitor {
 			
 			if(sc.hasNextLine()) {
 				String header = sc.nextLine();
-				vertices = Integer.parseInt("" + header.charAt(0));
-				arestas = Integer.parseInt("" + header.charAt(2));
+				vertices = Integer.parseInt(header.substring(0, 3));
+				arestas = Integer.parseInt(header.substring(4));
 			}
 			
 			for(int i = 0; i < vertices; i++) {
-				listaVertice.add(new Vertice(sc.nextLine()));
+				listaVertice.add(new Vertice(sc.nextLine().substring(0, 3)));
 			}
 			
 			for(int i = 0; i < arestas; i++) {
 				String line = sc.nextLine();
 				for(int j = 0; j < vertices; j++) {
-					if(listaVertice.get(j).nome.equals("" + line.charAt(0))) { //line.substring(0, 3)
+					if(listaVertice.get(j).nome.equals(line.substring(0, 3))) { //line.substring(0, 3)
 						for(int k = 0; k < vertices; k++) {
-							if(listaVertice.get(k).nome.equals("" + line.charAt(1))) {
+							if(listaVertice.get(k).nome.equals(line.substring(3, 6))) {
 								int corte = 2;
 								if(line.substring(line.length() - 2).charAt(0) == ' ') {
 									corte = 1;
