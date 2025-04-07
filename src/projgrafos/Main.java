@@ -44,5 +44,6 @@ public class Main {
 			}
 		}
 		algoritmo.calcularMenoresDistancias(listaVertices, listaVertices.get(p1), listaVertices.get(p2));
+		sc.close();
 	}
 }
