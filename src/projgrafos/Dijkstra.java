@@ -83,7 +83,7 @@ public class Dijkstra {
             System.out.print("Caminho de " + origem.nome + " até " + destino.nome + ": ");
             for (int i = 0; i < caminho.size(); i++) {
                 System.out.print(caminho.get(i).nome);
-                if (i < caminho.size() - 1) System.out.print(" → ");
+                if (i < caminho.size() - 1) System.out.print(" -> ");
             }
             System.out.println("\nPeso total do caminho: " + pesoTotal);
         }
