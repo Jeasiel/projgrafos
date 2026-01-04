@@ -31,11 +31,11 @@ public class Main {
 		int p1 = 0, p2 = 0;
 		boolean p1enc = false, p2enc = false;
 		for(int i = 0; i < listaVertices.size(); i++) {
-			if(listaVertices.get(i).nome.equals(line.substring(0, 3)) && !p1enc) {
+			if(listaVertices.get(i).nome.equals(line.substring(0, 3).toUpperCase()) && !p1enc) {
 				p1 = i;
 				p1enc = true;
 			}
-			if(listaVertices.get(i).nome.equals(line.substring(3, 6)) && !p2enc) {
+			if(listaVertices.get(i).nome.equals(line.substring(3, 6).toUpperCase()) && !p2enc) {
 				p2 = i;
 				p2enc = true;
 			}
